@@ -36,7 +36,7 @@ https://kaeedev.github.io/Proyecto-7-Spa-Beauty/
 
 1. Clona este repositorio:
    ```bash
-   https://github.com/kaeedev/Proyecto-7-Spa-Beauty.git
+   https://github.com/kaeedev/Proyecto-8-Header-Architecture.git
 
 2. No requiere de instalación. Con la extensión live server o similares de VSCODE podrás ver el proyecto de manera local
 
@@ -86,7 +86,7 @@ https://kaeedev.github.io/Proyecto-7-Spa-Beauty/
 
 - Clone this repository:
   ```bash
-  https://github.com/kaeedev/Proyecto-7-Spa-Beauty.git
+  https://github.com/kaeedev/Proyecto-8-Header-Architecture.git
   
 - No installation is required. You can use the Live Server extension or similar in VS Code to view the project locally.
   
