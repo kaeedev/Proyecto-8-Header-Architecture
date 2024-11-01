@@ -1,0 +1,51 @@
+.hero {
+    width: 70%;
+    margin-left: right;
+    h1 {
+        font-family: "Playfair Display";
+        font-weight: 400;
+        color: $text-color;
+        line-height: 96px;
+        font-size: $title-text-size;
+        margin-bottom: 30px;
+    }
+
+    &_description {
+        font-family: "Poppins";
+        width: 65%;
+        font-size: $important-text-size;
+        color: $subtext-color;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+
+    &_search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        gap: 50px;
+        .btn {
+            @include button();
+            font-family: "Poppins";
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            border-radius: 0;
+            gap: 5px;
+            padding: 16px;
+            &:hover{
+                transition-duration: 0.5s;
+            }
+        }
+        .video{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $subtext-color;
+            gap: 15px;
+            font-size: 18px;
+            font-family: "Poppins";
+        }
+    }
+
+}

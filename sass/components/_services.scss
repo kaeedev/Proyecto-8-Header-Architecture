@@ -1,0 +1,50 @@
+.services {
+        article{
+            position: absolute;
+            top: 550px;
+            left: 63%;
+            width: 380px;
+            background-color: white;
+            padding: 24px;
+            font-size: 18px;
+            font-family: "Poppins";
+
+            h1 {
+                font-size: $text-size;
+                color: $subtext-color;
+            }
+            span{
+                align-items: center;
+                display: inline-flex;
+                justify-content: space-around;
+                font-size: $important-text-size;
+                color: $text-color;
+            }
+
+            .icon1{
+                margin-left: 110px;
+            }
+            .icon2{
+                margin-left: 143px;
+            }
+            .icon3{
+                margin-left: 159px;
+            }
+            .numerada {
+                list-style-type: none; /* Quita los puntos predeterminados */
+                counter-reset: lista; /* Inicializa el contador */
+                padding: 0; /* Quita el relleno */
+            }
+            
+            .numerada li {
+                counter-increment: lista; /* Incrementa el contador */
+            }
+            
+            .numerada li::before {
+                content: '0' counter(lista); /* Muestra el número con un prefijo 0 */
+                margin-right: 20px; /* Espaciado entre el número y el texto */
+                color: $subtext-color;
+            }
+            
+    }
+}

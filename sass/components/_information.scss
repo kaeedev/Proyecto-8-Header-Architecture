@@ -1,0 +1,25 @@
+.information {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding: 32px;
+        &_item {
+            text-align: left;
+            width: 20%;
+            &-title{
+                font-size: 64px;
+                font-weight: 500;
+                font-family: "Poppins";
+                margin-bottom: -10px;
+            }
+
+            &-description{
+                font-size: 18px;
+                font-family: "Poppins";
+                color: $subtext-color;
+
+            }
+        }
+    }
+
+    

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Belgrano&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.hero {
+  width: 70%;
+  margin-left: right;
+}
+.hero h1 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  color: #424241;
+  line-height: 96px;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.hero_description {
+  font-family: "Poppins";
+  width: 65%;
+  font-size: 24px;
+  color: #9E9D9B;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+.hero_search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+.hero_search .btn {
+  display: inline-block;
+  background-color: #424241;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  gap: 5px;
+  padding: 16px;
+}
+.hero_search .btn:hover {
+  transition-duration: 0.5s;
+}
+.hero_search .video {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #9E9D9B;
+  gap: 15px;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+
+.information {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.information_item {
+  text-align: left;
+  width: 20%;
+}
+.information_item-title {
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-bottom: -10px;
+}
+.information_item-description {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #9E9D9B;
+}
+
+.services article {
+  position: absolute;
+  top: 550px;
+  left: 63%;
+  width: 380px;
+  background-color: white;
+  padding: 24px;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+.services article h1 {
+  font-size: 18px;
+  color: #9E9D9B;
+}
+.services article span {
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 24px;
+  color: #424241;
+}
+.services article .icon1 {
+  margin-left: 110px;
+}
+.services article .icon2 {
+  margin-left: 143px;
+}
+.services article .icon3 {
+  margin-left: 159px;
+}
+.services article .numerada {
+  list-style-type: none; /* Quita los puntos predeterminados */
+  counter-reset: lista; /* Inicializa el contador */
+  padding: 0; /* Quita el relleno */
+}
+.services article .numerada li {
+  counter-increment: lista; /* Incrementa el contador */
+}
+.services article .numerada li::before {
+  content: "0" counter(lista); /* Muestra el número con un prefijo 0 */
+  margin-right: 20px; /* Espaciado entre el número y el texto */
+  color: #9E9D9B;
+}
+
+nav.nav_primary ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+nav.nav_primary ul a {
+  font-weight: 400;
+  color: #9E9D9B;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+nav.nav_primary ul a:hover {
+  text-decoration: underline;
+}
+nav.nav_primary ul .active {
+  color: #424241;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6px;
+  padding-right: 16px;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  width: 380px;
+  height: 640px;
+  top: 100px;
+  left: 550px;
+  z-index: -1;
+  background-image: url(../img/edificio1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.container::after {
+  content: "";
+  width: 380px;
+  height: 640px;
+  top: 100px;
+  left: 1000px;
+  z-index: -1;
+  background-image: url(../img/edificio2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.information::before {
+  content: "";
+  width: 870px;
+  height: 161px;
+  top: 820px;
+  left: 450px;
+  z-index: -3;
+  background-color: #f1e7e7;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.hero::before {
+  content: "";
+  width: 270px;
+  height: 101px;
+  top: 15%;
+  left: 13%;
+  z-index: -3;
+  background-color: #f1e7e7;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+}
+
+body::before {
+  content: "";
+  width: 80vh;
+  height: 980px;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #DEDAD5;
+}
+
+/*# sourceMappingURL=style.css.map */
